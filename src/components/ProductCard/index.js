@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, number, bool } from 'prop-types';
-import './style.css';
+import './style.sass';
 
 const ProductCard =
   ({ id, title, currency, amount, decimals, picture, condition, freeShipping }) => (

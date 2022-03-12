@@ -1,0 +1,20 @@
+[
+  {
+    "author": {
+    "name": "Victor",
+    "lastname": "Matheu"
+    },
+    "item": {
+      "id": "id_test",
+      "title": "Flor",
+      "price": {
+        "currency": "CLP",
+        "amount": 3000,
+        "decimals": 0
+      },
+      "picture": "http://la_imagen",
+      "condition": "condition",
+      "free_shipping": true,
+    }
+  }
+]
