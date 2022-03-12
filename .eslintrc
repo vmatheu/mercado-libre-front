@@ -1,0 +1,29 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["test/**/*.js", "deploy/**/*.js", "*.js", "**/*.spec.js"]}],
+    "react/jsx-filename-extension": 0,
+    "react/no-unused-prop-types": [1],
+    "complexity": ["error", 5],
+    "arrow-parens": "off",
+    "key-spacing": ["error", { "afterColon": true }],
+    "jsx-a11y/no-static-element-interactions": 1,
+    "import/no-named-as-default-member": 0
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "allowImportExportEverywhere": true
+  }
+}
