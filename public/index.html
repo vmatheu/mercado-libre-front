@@ -2,13 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.lider.cl/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Productos Mercado Libre">
+    <meta name="description" content="Productos Lider">
     <meta name="author" content="Victor Matheu, and Bootstrap contributors">  
     <title>Lider Shopping Productos</title>
-    
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          } 
+        }
+        .mcl-site-bar{
+          background-color: #fee63c;
+          color: azure;
+        }
+      </style>
   </head>
   <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm mcl-site-bar">
+      <div class="my-0 mr-md-auto font-weight-normal">
+        <img src="https://play-lh.googleusercontent.com/cDtLokndC3vu7f77UgNfT5ui8pSagdhtmFvJzFhdWk0C-cVLTpFnIxN_NHi-Nc8XFFo" width="99">
+      </div>
+    </div>
     <div id="app"></div>
   </body>
+  <script type="text/javascript">
+    (function(global) {
+        global.WALMARTSHOPPING = global.WALMARTSHOPPING ? global.WALMARTSHOPPING : {};
+    })(this);
+    WALMARTSHOPPING.Environment = <%= JSON.stringify(htmlWebpackPlugin.options.environment) %>;
+  </script>
 </html>
