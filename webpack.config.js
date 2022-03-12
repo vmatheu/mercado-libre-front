@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.(less|css)$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
