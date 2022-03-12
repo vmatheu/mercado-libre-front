@@ -14,6 +14,9 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    alias: {
+      test: path.resolve(__dirname, 'test'),
+    }
   },
   module: {
     rules: [

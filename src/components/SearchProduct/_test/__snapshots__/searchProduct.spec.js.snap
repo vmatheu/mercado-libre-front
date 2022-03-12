@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchProduct/> With search product by id should have the same ui structure 1`] = `
+<div
+  className="container"
+>
+  <Loading
+    loading={false}
+  />
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12 col-md-5 "
+    >
+      <p>
+        Ingresar busqueda de Productos
+      </p>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12 col-md-5"
+    >
+      <input
+        className="form-control mcl-search-product-input-search"
+        id="inputSearchId"
+      />
+      <input
+        onClick={[Function]}
+        text="Buscar"
+        type="button"
+      />
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="mcl-search-product-bar-space"
+    />
+  </div>
+  <div
+    className="container mcl-search-product-productList"
+  >
+    <ProductList
+      products={Array []}
+    />
+  </div>
+</div>
+`;

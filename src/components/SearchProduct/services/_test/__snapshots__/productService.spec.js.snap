@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductService  should be return object when calling getProductBySearch 1`] = `
+Array [
+  Object {
+    "amount": 3000,
+    "condition": "condition",
+    "currency": "CLP",
+    "decimals": 0,
+    "freeShipping": true,
+    "id": "id_test",
+    "picture": "http://la_imagen",
+    "title": "Flor",
+  },
+]
+`;
