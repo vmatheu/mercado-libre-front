@@ -2,7 +2,7 @@
 
 exports[`<ProductList/> should be list product should have the same ui structure with five product 1`] = `
 <div
-  className="card-deck mb-3 text-center"
+  className="text-left"
 >
   <ProductCard
     amount={3000}
@@ -64,7 +64,7 @@ exports[`<ProductList/> should be list product should have the same ui structure
 
 exports[`<ProductList/> should be list product should have the same ui structure with one product 1`] = `
 <div
-  className="card-deck mb-3 text-center"
+  className="text-left"
 >
   <ProductCard
     amount={3000}
