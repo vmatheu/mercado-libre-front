@@ -1,8 +1,7 @@
 import axios from 'axios';
-import { PRODUCT_SERVICE_ENDPOINT_SEARCH_QUERY } from '../../constants';
+import { PRODUCT_SERVICE_ENDPOINT_ID } from '../../constants';
 
-const transformProductSearch = (products) => products.map(
-  product => ({
+const transformProductSearch = (product) => ({
     id: product.item.id,
     title: product.item.title,
     currency: product.item.price.currency,
@@ -11,15 +10,16 @@ const transformProductSearch = (products) => products.map(
     picture: product.item.picture,
     condition: product.item.condition,
     freeShipping: product.item.free_shipping
-  })
-);
+})
 
-export const findProductBySearch = async (search) => {
-  const productServiceEnpoint = PRODUCT_SERVICE_ENDPOINT_SEARCH_QUERY.development.url;
-  const data = await axios.get(`${productServiceEnpoint}?q=${search}`)
+
+
+export const findProductById = async (search) => {
+  const productServiceEnpoint = PRODUCT_SERVICE_ENDPOINT_ID.development.url;
+  const data = await axios.get(`${productServiceEnpoint}${search}`)
     .then(response => transformProductSearch(response.data))
     .catch(error => ([]));
   return data;
 };
 
-export default { findProductBySearch };
+export default { findProductById };

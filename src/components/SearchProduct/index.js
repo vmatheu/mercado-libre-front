@@ -19,9 +19,8 @@ export const onClick = (setProducts, setInit, setInput) => async (search) => {
 };
 
 export const SearchProduct = () => {
-
-  const [data, setProducts] = useState({ products: []});
   const { searchParam }  = useParams();
+  const [data, setProducts] = useState({ products: []});
   const [input, setInput] = useState(searchParam);
   const [init, setInit] = useState(true);
 

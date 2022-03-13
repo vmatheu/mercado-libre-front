@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { SearchBar } from "../SearchBar";
 import { validateSearch } from "../validations";
 
@@ -28,16 +28,8 @@ export const ProductBox = () => {
   }
 
   return (
-    <SearchBar key="searchBar_productBox" onClick={onClick(onSearch, setInput)} ></SearchBar>
+    <SearchBar key="searchBar_productBox" initInput={input} onClick={onClick(onSearch, setInput)} ></SearchBar>
   );
-};
-
-export const ProducBoxLink = () => {
-  return (
-    <Link to="/">
-      <ProductBox />
-    </Link>
-  );
-};
+};  
 
 export default { ProductBox, onClick };
