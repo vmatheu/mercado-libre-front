@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductBox/> With search product by id should have the same ui structure 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12 col-md-5 "
+    >
+      <p>
+        Ingresar busqueda de Productos
+      </p>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xs-12 col-md-5"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <input
+                className="form-control mcl-search-product-input-search"
+                onChange={[Function]}
+                value=""
+              />
+            </td>
+            <td>
+              <input
+                alt="Buscar"
+                onClick={[Function]}
+                src="https://icon-library.com/images/search-icon-jpg/search-icon-jpg-18.jpg"
+                type="image"
+                width="45px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="mcl-search-product-bar-space"
+    />
+  </div>
+</div>
+`;
