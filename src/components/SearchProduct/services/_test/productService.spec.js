@@ -34,7 +34,6 @@ describe('ProductService ', () => {
 
   it('should be return object when calling getProductBySearch', async () => {
     const result = await findProductBySearch('1');
-    console.log(result)
     expect(result).toMatchSnapshot();
   });
 });

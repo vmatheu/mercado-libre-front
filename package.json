@@ -1,70 +1,41 @@
 {
-  "name": "walmark-shopping-webapp",
-  "version": "0.1.0",
-  "description": "React component for Walmark shopping ",
-  "main": "app.js",
-  "engines": {
-    "node": "12.x"
-  },
-  "scripts": {
-    "build-dev": "webpack --progress --config webpack.config.js",
-    "start": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3001 --watch",
-    "lint": "eslint src test --ignore-path .eslintignore",
-    "lint:fix": "eslint src test --ignore-path .gitignore --fix",
-    "test": "npm run test:unit && npm run test:integration && npm run test:functional",
-    "test:unit": "NODE_PATH=./src jest /src.*.spec.js",
-    "test:coverage": "NODE_PATH=./src jest /src.*.spec.js --coverage",
-    "test:watch": "NODE_PATH=./src jest --watch  /src.*.spec.js",
-    "stubby": "stubby -t 7444 -a 8888 --watch --data test/stubs/stubby.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "Victor Matheu",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.0.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^27.5.1",
-    "babel-loader": "^8.0.0",
-    "babel-plugin-dynamic-import-node": "^2.2.0",
-    "chai": "^4.2.0",
-    "chai-enzyme": "^1.0.0-beta.1",
-    "css-loader": "^6.7.1",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.3.5",
-    "eslint": "^3.14.0",
-    "eslint-config-airbnb": "^14.0.0",
-    "eslint-import-resolver-webpack": "^0.8.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0",
-    "html-webpack-plugin": "^4.4.1",
-    "jest": "^24.9.0",
-    "sinon": "^9.0.3",
-    "sinon-chai": "^3.5.0",
-    "stubby": "^5.0.0",
-    "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^1.2.3",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  },
+  "name": "react-router-config-example",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
   "dependencies": {
     "axios": "^0.26.1",
     "node-sass": "^4.14.1",
-    "path": "^0.12.7",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "sass-loader": "^12.6.0"
-  }
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router": "5.1.2",
+    "react-router-config": "5.1.1",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.0.1",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "enzyme": "^3.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "sinon": "^9.0.3",
+    "sinon-chai": "^3.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run test:unit && npm run test:integration && npm run test:functional",
+    "test:unit": "NODE_PATH=./src jest /src.*.spec.js",
+    "test:watch": "NODE_PATH=./src jest --watch  /src.*.spec.js",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

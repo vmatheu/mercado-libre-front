@@ -1,6 +1,6 @@
 import React from 'react';
 import { arrayOf, object } from 'prop-types';
-import ProductCard from 'components/ProductCard';
+import ProductCard from '../ProductCard';
 
 const ProductList = ({ products }) => {
   return (<div className="card-deck mb-3 text-center">

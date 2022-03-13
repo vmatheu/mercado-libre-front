@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SearchProduct/> With search product by string query should have the same ui structure 1`] = `
+exports[`<ProductBox/> With search product by id should have the same ui structure 1`] = `
 <div
   className="container"
 >
@@ -28,7 +28,7 @@ exports[`<SearchProduct/> With search product by string query should have the sa
               <input
                 className="form-control mcl-search-product-input-search"
                 onChange={[Function]}
-                value="La busqueda"
+                value=""
               />
             </td>
             <td>
@@ -50,13 +50,6 @@ exports[`<SearchProduct/> With search product by string query should have the sa
   >
     <div
       className="mcl-search-product-bar-space"
-    />
-  </div>
-  <div
-    className="container mcl-search-product-productList"
-  >
-    <ProductList
-      products={Array []}
     />
   </div>
 </div>

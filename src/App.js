@@ -1,10 +1,15 @@
 import React from 'react';
-import { SearchProduct } from 'components/SearchProduct';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { ProducBoxLink } from './components/ProductBox';
+import { SearchProduct } from './components/SearchProduct';
+
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 const App = () => (
   <BrowserRouter>
-    <Route path="/app" component={SearchProduct} />  
+    <Switch>
+      <Route exact path="/" component={ProducBoxLink} />
+      <Route path="/item/search/:searchParam" component={SearchProduct} /> 
+    </Switch>
   </BrowserRouter>
 );
 
