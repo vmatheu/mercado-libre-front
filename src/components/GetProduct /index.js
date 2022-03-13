@@ -21,18 +21,15 @@ const ProductOpen =
 const getProducto = async (search) => await productService.findProductById(search.toLowerCase());
 
 export const GetProduct = () => {
-  const { searchParam }  = useParams();
+  const { idProduct }  = useParams();
   const [product, setProduct] = useState({})
-  console.log("searchParam", searchParam)
 
   useEffect(() => {
     const fetchProduct = async () => {
         try {
-            const response = await getProducto(searchParam)
-            console.log("Response:", JSON.stringify(response))
+            const response = await getProducto(idProduct)
             setProduct(response)
         } catch (e) {
-            console.log(e);
             setProduct({})
         }
     };
@@ -47,6 +44,5 @@ export const GetProduct = () => {
     </div>
   );
 };
-
 
 export default { GetProduct };

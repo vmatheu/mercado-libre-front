@@ -1,11 +1,11 @@
-import { findProductBySearch } from '../productService';
+import { findProductById } from '../productService';
 import axios from 'axios';
 
 jest.mock('axios');
 
 
 const endpointResponse = {
-  data: [
+  data: 
     {
       "author": {
       "name": "Victor",
@@ -24,7 +24,7 @@ const endpointResponse = {
         "free_shipping": true
       }
     }
-  ]
+  
 }
 
 describe('ProductService ', () => {
@@ -33,7 +33,7 @@ describe('ProductService ', () => {
   });
 
   it('should be return object when calling getProductBySearch', async () => {
-    const result = await findProductBySearch('1');
+    const result = await findProductById('1');
     expect(result).toMatchSnapshot();
   });
 });

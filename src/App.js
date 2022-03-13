@@ -11,7 +11,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={ProductBox} />
       <Route exact path="/item/search/:searchParam" component={SearchProduct} /> 
-      <Route exact path="/item/:searchParam" component={GetProduct} /> 
+      <Route exact path="/item/:idProduct" component={GetProduct} /> 
     </Switch>
   </BrowserRouter>
 );

@@ -3,6 +3,7 @@
 exports[`<ProductCard/> should be product card should have the same ui structure with one product 1`] = `
 <div
   className="ard mb-4 shadow-sm mcl-product-card"
+  onClick={[Function]}
 >
   <div
     className="card-header"
