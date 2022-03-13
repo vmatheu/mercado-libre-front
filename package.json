@@ -22,7 +22,8 @@
     "enzyme-to-json": "^3.3.5",
     "enzyme-adapter-react-16": "^1.14.0",
     "sinon": "^9.0.3",
-    "sinon-chai": "^3.5.0"
+    "sinon-chai": "^3.5.0",
+    "stubby": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,7 +31,8 @@
     "test": "npm run test:unit && npm run test:integration && npm run test:functional",
     "test:unit": "NODE_PATH=./src jest /src.*.spec.js",
     "test:watch": "NODE_PATH=./src jest --watch  /src.*.spec.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stubby": "stubby -t 7444 -a 8888 --watch --data test/stubs/stubby.json"
   },
   "browserslist": [
     ">0.2%",
