@@ -25,7 +25,7 @@ exports[`<ProductCard/> should be product card should have the same ui structure
     </h3>
     <img
       alt="imagen del producto Relojes Por Mayor Digitales Imantados Unisex ( 5 Unidades )"
-      src="http://http://miImagenNBonita.cl"
+      src="http://miImagenNBonita.cl"
     />
     <h6>
       <Component />

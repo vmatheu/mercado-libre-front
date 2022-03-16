@@ -5,13 +5,13 @@ jest.mock('axios');
 
 
 const endpointResponse = {
-  data: [
+  data: 
     {
       "author": {
       "name": "Victor",
       "lastname": "Matheu"
       },
-      "item": {
+      "items": [{
         "id": "id_test",
         "title": "Flor",
         "price": {
@@ -21,10 +21,10 @@ const endpointResponse = {
         },
         "picture": "http://la_imagen",
         "condition": "condition",
-        "free_shipping": true
-      }
+        "freeShipping": true
+      }]
     }
-  ]
+  
 }
 
 describe('ProductService ', () => {

@@ -27,7 +27,7 @@ const ProductCard =
       </div>
       <div className="card-body">
         <h3 className="card-title pricing-card-title">${amount}</h3>
-        <img alt={`imagen del producto ${title}`} src={`http://${picture}`} />
+        <img alt={`imagen del producto ${title}`} src={picture} />
         <h6>{freeShipping}</h6>
       </div>
     </div>

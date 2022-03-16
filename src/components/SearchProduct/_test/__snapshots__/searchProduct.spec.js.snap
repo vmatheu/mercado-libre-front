@@ -5,7 +5,7 @@ exports[`<SearchProduct/> With search product by string query should have the sa
   className="container"
 >
   <SearchBar
-    initInput="La busqueda"
+    initInput=""
     key="searchBar_searchProduct"
     onClick={[Function]}
   />
