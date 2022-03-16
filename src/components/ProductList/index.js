@@ -5,20 +5,23 @@ import ProductCard from "../ProductCard";
 const ProductList = ({ products, categories }) => {
   return (
     <div>
+      <div className="card-header">
+        <table>
+          <tbody>
+            <tr>
+              {categories.map((category, index) => (
+                <td key={category + index}>
+                  {" "}
+                  <p className="my-0 font-weight-normal">
+                    /{category}{" "}
+                  </p>
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>
-        <div className="card-header">
-          <p className="my-0 font-weight-normal">
-            <table>
-              <tbody>
-                <tr>
-                  {categories.map((category, index) => (
-                   <td key={category + index}>/{category}</td>
-                  ))}
-                </tr>
-              </tbody>
-            </table>
-          </p>
-        </div>
       </p>
       <div className="text-left">
         {products.map((product) => (

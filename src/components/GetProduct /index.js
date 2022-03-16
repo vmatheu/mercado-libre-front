@@ -21,31 +21,50 @@ const ProductOpen =
     </div>
 );
 
+const CategoriesProduct = ({categories}) =>
+      <div className="card-header">
+        <table>
+          <tbody>
+            <tr>
+              {categories.map((category, index) => (
+                <td key={category + index}>
+                  {" "}
+                  <p className="my-0 font-weight-normal">
+                    /{category}{" "}
+                  </p>
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
 const getProducto = async (search) => await productService.findProductById(search);
 
 export const GetProduct = () => {
   const { idProduct }  = useParams();
-  const [product, setProduct] = useState({})
+  const [productBox, setProduct] = useState({product: undefined, categories: []})
 
   useEffect(() => {
     const fetchProduct = async () => {
         try {
             const response = await getProducto(idProduct)
-            setProduct(response)
+            setProduct({product: response.item, categories: response.categories})
         } catch (e) {
-            setProduct({})
+            setProduct({product: undefined, categories: []})
         }
     };
     fetchProduct();
   }, {});
 
-  return (
-    <div className="container">
+  return productBox.product ? 
+   <div className="container">
       <ProductBox />
       <p></p>
-      <ProductOpen {...product} /> 
-    </div>
-  );
+      <CategoriesProduct categories={productBox.categories} />
+      <ProductOpen {...productBox.product} /> 
+    </div> : <div></div>
+  ;
 };
 
 export default { GetProduct };

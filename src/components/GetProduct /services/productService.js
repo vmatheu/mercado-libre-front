@@ -18,7 +18,10 @@ const transformProductSearch = (respuesta) => ({
 export const findProductById = async (search) => {
   const productServiceEnpoint = PRODUCT_SERVICE_ENDPOINT_ID;
   const data = await axios.get(`${productServiceEnpoint}/${search}`)
-    .then(response => transformProductSearch(response.data))
+    .then(response => ({
+      item: transformProductSearch(response.data),
+      categories: response.data.categories,
+    }))
     .catch(error => {
       console.error(error)
       return []

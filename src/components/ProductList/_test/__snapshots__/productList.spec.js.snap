@@ -2,28 +2,29 @@
 
 exports[`<ProductList/> should be list product should have the same ui structure with five product 1`] = `
 <div>
-  <p>
-    <div
-      className="card-header"
-    >
-      <p
-        className="my-0 font-weight-normal"
-      >
-        <table>
-          <tbody>
-            <tr>
-              <td
-                key="categories0"
-              >
-                /
-                categories
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </p>
-    </div>
-  </p>
+  <div
+    className="card-header"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <td
+            key="categories0"
+          >
+             
+            <p
+              className="my-0 font-weight-normal"
+            >
+              /
+              categories
+               
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p />
   <div
     className="text-left"
   >
@@ -88,28 +89,29 @@ exports[`<ProductList/> should be list product should have the same ui structure
 
 exports[`<ProductList/> should be list product should have the same ui structure with one product 1`] = `
 <div>
-  <p>
-    <div
-      className="card-header"
-    >
-      <p
-        className="my-0 font-weight-normal"
-      >
-        <table>
-          <tbody>
-            <tr>
-              <td
-                key="categories0"
-              >
-                /
-                categories
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </p>
-    </div>
-  </p>
+  <div
+    className="card-header"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <td
+            key="categories0"
+          >
+             
+            <p
+              className="my-0 font-weight-normal"
+            >
+              /
+              categories
+               
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p />
   <div
     className="text-left"
   >

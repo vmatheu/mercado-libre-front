@@ -2,14 +2,17 @@
 
 exports[`ProductService  should be return object when calling getProductBySearch 1`] = `
 Object {
-  "amount": 3000,
-  "condition": "condition",
-  "currency": "CLP",
-  "decimals": 0,
-  "description": undefined,
-  "freeShipping": undefined,
-  "id": "id_test",
-  "picture": "http://la_imagen",
-  "title": "Flor",
+  "categories": undefined,
+  "item": Object {
+    "amount": 3000,
+    "condition": "condition",
+    "currency": "CLP",
+    "decimals": 0,
+    "description": undefined,
+    "freeShipping": undefined,
+    "id": "id_test",
+    "picture": "http://la_imagen",
+    "title": "Flor",
+  },
 }
 `;

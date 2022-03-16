@@ -1,11 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GetProduct/> With search product by string query should have the same ui structure 1`] = `
-<div
-  className="container"
->
-  <ProductBox />
-  <p />
-  <ProductOpen />
-</div>
-`;
+exports[`<GetProduct/> With search product by string query should have the same ui structure 1`] = `<div />`;
