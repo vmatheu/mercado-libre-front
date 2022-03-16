@@ -13,6 +13,7 @@ exports[`<SearchProduct/> With search product by string query should have the sa
     className="container mcl-search-product-productList"
   >
     <ProductList
+      categories={Array []}
       products={Array []}
     />
   </div>

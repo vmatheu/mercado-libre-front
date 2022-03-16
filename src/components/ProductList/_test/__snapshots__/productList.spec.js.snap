@@ -1,81 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductList/> should be list product should have the same ui structure with five product 1`] = `
-<div
-  className="text-left"
->
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_1"
-    key="test_id_1"
-    picture="uriimage"
-    title="producto 1"
-  />
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_2"
-    key="test_id_2"
-    picture="uriimage"
-    title="producto 2"
-  />
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_3"
-    key="test_id_3"
-    picture="uriimage"
-    title="producto 3"
-  />
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_4"
-    key="test_id_4"
-    picture="uriimage"
-    title="producto 4"
-  />
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_5"
-    key="test_id_5"
-    picture="uriimage"
-    title="producto 5"
-  />
+<div>
+  <p>
+    <div
+      className="card-header"
+    >
+      <p
+        className="my-0 font-weight-normal"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                key="categories0"
+              >
+                /
+                categories
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </div>
+  </p>
+  <div
+    className="text-left"
+  >
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_1"
+      key="test_id_1"
+      picture="uriimage"
+      title="producto 1"
+    />
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_2"
+      key="test_id_2"
+      picture="uriimage"
+      title="producto 2"
+    />
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_3"
+      key="test_id_3"
+      picture="uriimage"
+      title="producto 3"
+    />
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_4"
+      key="test_id_4"
+      picture="uriimage"
+      title="producto 4"
+    />
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_5"
+      key="test_id_5"
+      picture="uriimage"
+      title="producto 5"
+    />
+  </div>
 </div>
 `;
 
 exports[`<ProductList/> should be list product should have the same ui structure with one product 1`] = `
-<div
-  className="text-left"
->
-  <ProductCard
-    amount={3000}
-    condition="condition"
-    currency="clp"
-    decimals={10}
-    freeShipping={true}
-    id="test_id_1"
-    key="test_id_1"
-    picture="uriimage"
-    title="producto 1"
-  />
+<div>
+  <p>
+    <div
+      className="card-header"
+    >
+      <p
+        className="my-0 font-weight-normal"
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td
+                key="categories0"
+              >
+                /
+                categories
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </div>
+  </p>
+  <div
+    className="text-left"
+  >
+    <ProductCard
+      amount={3000}
+      condition="condition"
+      currency="clp"
+      decimals={10}
+      freeShipping={true}
+      id="test_id_1"
+      key="test_id_1"
+      picture="uriimage"
+      title="producto 1"
+    />
+  </div>
 </div>
 `;

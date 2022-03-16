@@ -7,6 +7,8 @@ const buildProduct =
   (id, title, amount, currency, decimals, picture, condition, freeShipping) =>
   ({ id, title, amount, currency, decimals, picture, condition, freeShipping });
 
+const categories = ['categories']
+
 describe('<ProductList/>', () => {
   describe('should be list product', () => {
     it('should have the same ui structure with one product', () => {
@@ -14,7 +16,7 @@ describe('<ProductList/>', () => {
         buildProduct('test_id_1', 'producto 1', 3000, 'clp', 10, 'uriimage', 'condition', true),
       ];
 
-      const wrapper = shallow(<ProductList products={products} />);
+      const wrapper = shallow(<ProductList products={products} categories={categories} />);
       const tree = toJson(wrapper);
       expect(tree).toMatchSnapshot();
     });
@@ -28,7 +30,7 @@ describe('<ProductList/>', () => {
         buildProduct('test_id_5', 'producto 5', 3000, 'clp', 10, 'uriimage', 'condition', true),
       ];
 
-      const wrapper = shallow(<ProductList products={products} />);
+      const wrapper = shallow(<ProductList products={products} categories={categories}/>);
       const tree = toJson(wrapper);
       expect(tree).toMatchSnapshot();
     });
