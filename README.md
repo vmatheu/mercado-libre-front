@@ -1,6 +1,6 @@
 ## Description
 
-framework starter react-script.
+Aplicacion front para bucar productos dentro de la api de test de mercado libre.
 
 ## Installation
 
@@ -12,13 +12,12 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm start
 
-# watch mode
+# dev mode
+$ npm run stubby
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
 ```
 
 ## Test
@@ -26,11 +25,5 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
