@@ -43,7 +43,7 @@ const getProducto = async (search) => await productService.findProductById(searc
 
 export const GetProduct = () => {
   const { idProduct }  = useParams();
-  const [productBox, setProduct] = useState({product: undefined, categories: []})
+  const [productBox, setProduct] = useState({product: null, categories: []})
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -51,17 +51,18 @@ export const GetProduct = () => {
             const response = await getProducto(idProduct)
             setProduct({product: response.item, categories: response.categories})
         } catch (e) {
-            setProduct({product: undefined, categories: []})
+            setProduct({product: null, categories: []})
         }
     };
     fetchProduct();
-  }, {});
+  });
 
   return productBox.product ? 
    <div className="container">
       <ProductBox />
       <p></p>
       <CategoriesProduct categories={productBox.categories} />
+      <p></p>
       <ProductOpen {...productBox.product} /> 
     </div> : <div></div>
   ;

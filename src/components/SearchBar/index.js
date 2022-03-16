@@ -37,9 +37,6 @@ export const SearchBar = ({onClick, initInput}) => {
           </table>
         </div>
       </div>
-      <div className="row">
-        <div className="mcl-search-product-bar-space" />
-      </div>
     </div>
   );
 };

@@ -21,8 +21,10 @@ const ProductList = ({ products, categories }) => {
           </tbody>
         </table>
       </div>
-      <p>
-      </p>
+      <div className="row">
+        <div className="mcl-search-product-bar-space" />
+      </div>
+      <p></p>
       <div className="text-left">
         {products.map((product) => (
           <ProductCard key={product.id} {...product} />
@@ -30,7 +32,6 @@ const ProductList = ({ products, categories }) => {
       </div>
     </div>
   );
-  return;
 };
 
 ProductList.propTypes = {
