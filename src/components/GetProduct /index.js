@@ -55,7 +55,7 @@ export const GetProduct = () => {
         }
     };
     fetchProduct();
-  });
+  }, [idProduct]);
 
   return productBox.product ? 
    <div className="container">
