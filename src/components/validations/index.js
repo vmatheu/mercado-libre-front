@@ -1,5 +1,5 @@
-import { validateSearch } from "./validateSearch";
+import { validateSearch } from './validateSearch';
 
 export {
-    validateSearch
-}
+    validateSearch,
+};

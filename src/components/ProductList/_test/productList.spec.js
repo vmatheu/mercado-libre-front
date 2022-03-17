@@ -7,7 +7,7 @@ const buildProduct =
   (id, title, amount, currency, decimals, picture, condition, freeShipping) =>
   ({ id, title, amount, currency, decimals, picture, condition, freeShipping });
 
-const categories = ['categories']
+const categories = ['categories'];
 
 describe('<ProductList/>', () => {
   describe('should be list product', () => {
@@ -30,7 +30,7 @@ describe('<ProductList/>', () => {
         buildProduct('test_id_5', 'producto 5', 3000, 'clp', 10, 'uriimage', 'condition', true),
       ];
 
-      const wrapper = shallow(<ProductList products={products} categories={categories}/>);
+      const wrapper = shallow(<ProductList products={products} categories={categories} />);
       const tree = toJson(wrapper);
       expect(tree).toMatchSnapshot();
     });

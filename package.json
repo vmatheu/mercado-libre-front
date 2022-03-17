@@ -19,8 +19,8 @@
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
     "enzyme": "^3.10.0",
-    "enzyme-to-json": "^3.3.5",
     "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
     "sinon": "^9.0.3",
     "sinon-chai": "^3.5.0",
     "stubby": "^5.0.0"
@@ -33,7 +33,9 @@
     "test:unit": "NODE_PATH=./src jest /src.*.spec.js",
     "test:watch": "NODE_PATH=./src jest --watch  /src.*.spec.js",
     "eject": "react-scripts eject",
-    "stubby": "stubby -t 7444 -a 8888 --watch --data test/stubs/stubby.json"
+    "stubby": "stubby -t 7444 -a 8888 --watch --data test/stubs/stubby.json",
+    "lint": "eslint src test --ignore-path .eslintignore",
+    "lint:fix": "eslint src test --ignore-path .gitignore --fix"
   },
   "browserslist": [
     ">0.2%",

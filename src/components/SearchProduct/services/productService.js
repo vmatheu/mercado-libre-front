@@ -1,5 +1,5 @@
-import axios from "axios";
-import { PRODUCT_SERVICE_ENDPOINT_SEARCH_QUERY } from "../../constants";
+import axios from 'axios';
+import { PRODUCT_SERVICE_ENDPOINT_SEARCH_QUERY } from '../../constants';
 
 const transformProductSearch = (data) =>
   data.items.map((item) => ({
@@ -16,12 +16,10 @@ const transformProductSearch = (data) =>
 export const findProductBySearch = async (search) => {
   const data = await axios
     .get(`${PRODUCT_SERVICE_ENDPOINT_SEARCH_QUERY}?q=${search}`)
-    .then((response) => {
-      return {
-        items: transformProductSearch(response.data),
-        categories: response.data.categories,
-      };
-    })
+    .then((response) => ({
+      items: transformProductSearch(response.data),
+      categories: response.data.categories,
+    }))
     .catch((error) => {
       console.error(error);
       return [];

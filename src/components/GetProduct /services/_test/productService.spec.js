@@ -5,31 +5,31 @@ jest.mock('axios');
 
 
 const endpointResponse = {
-  data: 
-    {
-      "author": {
-      "name": "Victor",
-      "lastname": "Matheu"
+  data:
+  {
+    author: {
+      name: 'Victor',
+      lastname: 'Matheu',
+    },
+    item: {
+      id: 'id_test',
+      title: 'Flor',
+      price: {
+        currency: 'CLP',
+        amount: 3000,
+        decimals: 0,
       },
-      "item": {
-        "id": "id_test",
-        "title": "Flor",
-        "price": {
-          "currency": "CLP",
-          "amount": 3000,
-          "decimals": 0
-        },
-        "picture": "http://la_imagen",
-        "condition": "condition",
-        "free_shipping": true
-      }
-    }
-  
-}
+      picture: 'http://la_imagen',
+      condition: 'condition',
+      free_shipping: true,
+    },
+  },
+
+};
 
 describe('ProductService ', () => {
   beforeEach(() => {
-    axios.get.mockImplementation(() => Promise.resolve(endpointResponse))
+    axios.get.mockImplementation(() => Promise.resolve(endpointResponse));
   });
 
   it('should be return object when calling getProductBySearch', async () => {

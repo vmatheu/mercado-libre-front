@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { string, number, bool } from 'prop-types';
-import { Redirect } from "react-router-dom";
+import { Redirect } from 'react-router-dom';
 import './style.sass';
 
 export const onClick = async (inputId, setInputId) => {
@@ -15,13 +15,13 @@ const ProductCard =
         <Redirect
           push
           to={{
-            pathname: "/item/" + inputId,
+            pathname: `/item/${inputId}`,
           }}
         />
       );
     }
 
-    return <div onClick={() => setInputId(id)} className="ard mb-4 shadow-sm mcl-product-card">
+    return (<div onClick={() => setInputId(id)} className="ard mb-4 shadow-sm mcl-product-card">
       <div className="card-header">
         <h4 className="my-0 font-weight-normal">{title}</h4>
       </div>
@@ -30,8 +30,8 @@ const ProductCard =
         <img alt={`imagen del producto ${title}`} src={picture} />
         <h6>{freeShipping}</h6>
       </div>
-    </div>
-}
+    </div>);
+  };
 
 ProductCard.propTypes = {
   id: string.isRequired,

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./style.sass";
+import React, { useState } from 'react';
+import './style.sass';
 
-export const SearchBar = ({onClick, initInput}) => {
+export const SearchBar = ({ onClick, initInput }) => {
   const [input, setInput] = useState(initInput);
 
   return (

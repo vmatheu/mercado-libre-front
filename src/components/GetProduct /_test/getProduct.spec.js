@@ -1,19 +1,17 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import reactRouterDom from "react-router-dom";
+import reactRouterDom from 'react-router-dom';
 import { shallow } from 'enzyme';
-import productService from '../services/productService';
-import { GetProduct, onClick } from '..';
+import { GetProduct } from '..';
 
 jest.mock('../services/productService');
 jest.mock('react-router-dom');
 
 describe('<GetProduct/>', () => {
-
   beforeEach(() => {
     reactRouterDom.useParams = jest.fn();
     reactRouterDom.useParams.mockReturnValue({
-      searchParam: "La busqueda"
+      searchParam: 'La busqueda',
     });
   });
 
