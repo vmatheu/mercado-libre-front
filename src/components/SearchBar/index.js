@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import './style.sass';
 
+const onKeyUp = (event, onclick) => {
+  if (event.keyCode === 13) {
+    onclick()
+  }
+}
+
 export const SearchBar = ({ onClick, initInput }) => {
   const [input, setInput] = useState(initInput);
 
@@ -20,6 +26,7 @@ export const SearchBar = ({ onClick, initInput }) => {
                   <input
                     className="form-control mcl-search-product-input-search"
                     value={input}
+                    onKeyUp={(e) => onKeyUp(e, () => onClick(input))}
                     onChange={(e) => setInput(e.target.value)}
                   />
                 </td>
