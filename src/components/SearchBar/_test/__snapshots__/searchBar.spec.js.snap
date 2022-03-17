@@ -28,6 +28,7 @@ exports[`<SearchBar/> should have the same ui structure 1`] = `
               <input
                 className="form-control mcl-search-product-input-search"
                 onChange={[Function]}
+                onKeyUp={[Function]}
               />
             </td>
             <td>
@@ -43,13 +44,6 @@ exports[`<SearchBar/> should have the same ui structure 1`] = `
         </tbody>
       </table>
     </div>
-  </div>
-  <div
-    className="row"
-  >
-    <div
-      className="mcl-search-product-bar-space"
-    />
   </div>
 </div>
 `;

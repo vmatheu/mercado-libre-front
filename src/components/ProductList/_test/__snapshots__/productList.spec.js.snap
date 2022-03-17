@@ -24,6 +24,13 @@ exports[`<ProductList/> should be list product should have the same ui structure
       </tbody>
     </table>
   </div>
+  <div
+    className="row"
+  >
+    <div
+      className="mcl-search-product-bar-space"
+    />
+  </div>
   <p />
   <div
     className="text-left"
@@ -110,6 +117,13 @@ exports[`<ProductList/> should be list product should have the same ui structure
         </tr>
       </tbody>
     </table>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="mcl-search-product-bar-space"
+    />
   </div>
   <p />
   <div
